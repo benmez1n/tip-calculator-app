@@ -44,6 +44,7 @@ function app(){
         else if(i==1){
             if(inputs[i].value!==""){
                 percent=inputs[i].value;
+                bgReset();
             }
         }
 
