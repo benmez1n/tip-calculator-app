@@ -97,10 +97,7 @@ section:last-child button:hover{
     section:last-child{width:100%}
     section:last-child button{margin-top:20%}
 }
-
-.active:focus{
-    outline:2px solid var(--strong-cyan)
-}
+.active:focus{outline:2px solid var(--strong-cyan)}
 .select{color:var(--very-dark-cyan);background-color: hsl(172, 92%, 38%);}
 .error-input,
 .error-input:focus{outline:2px solid red;color:red}
@@ -109,7 +106,6 @@ section:last-child button:hover{
     float:right;
     color:red;
 }
-.select{color:var(--very-dark-cyan);background-color: hsl(172, 92%, 38%);}
 @font-face {
     font-family: "Space Mono";
     src: url(../fonts/SpaceMono-Regular.ttf);
