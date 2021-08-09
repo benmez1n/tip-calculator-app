@@ -32,7 +32,8 @@ function app(){
             buttons[i].addEventListener('click',function(){
                 bgReset();
                 percent = this.getAttribute('percent');
-                this.classList.add('select')
+                this.classList.add('select');
+                inputs[1].value ="";
             },false);
         }
 
