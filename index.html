@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <img src = "images/logo.svg" alt="logo"/>
+    <main>
+      <section>
+        <h1>Bill</h1>
+        <input type="text" name="bill"placeholder="0"text=""/>
+        <img src = "images/icon-dollar.svg" alt=dollars/>
+        <h1>Select Tip %</h1>
+        <div id=buttons>
+          <button percent=5>5%</button>
+          <button percent=10>10%</button>
+          <button percent=15>15%</button>
+          <button percent=25>25%</button>
+          <button percent=50>50%</button>
+          <input id=custom type="text" placeholder="Custom"/>
+        </div>
+        <h1 id='is-error'>Number of People</h1>
+        <input type="text" name="num of people" placeholder="0"text=""/>
+        <img src = "images/icon-person.svg" alt=person/>
+      </section>
+      <section>
+        <div class=result>
+          <div>
+            <h1>Tip Amount</h1>
+            <h2>/ person</h2>
+          </div>
+          <div class=amount>
+            <img src = "images/icon-dollar2.svg" alt=dollars/>
+            <span id="tip-amount">0.00</span>
+          </div>
+        </div>
+        <div class=result>
+          <div>
+            <h1>Total</h1>
+            <h2>/ person</h2>
+          </div>
+          <div class=amount>
+            <img src = "images/icon-dollar2.svg" alt=dollars/>
+            <span id=total>0.00</span>
+          </div>
+        </div>
+        <button id="reset">Reset</button>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/benmez1n"target="_blank">BENMEZIANE GHOMRI</a>.
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
