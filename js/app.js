@@ -76,4 +76,6 @@ resetBtn.addEventListener('click',function(){
     inputs.forEach(element=>element.value="");
     tipDom.textContent = num.toFixed(2);
     totalDom.textContent=num.toFixed(2);
+    error.classList.remove('error');
+    error.nextElementSibling.classList.remove('error-input');
 },false);
