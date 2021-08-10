@@ -11,7 +11,7 @@ let buttons = document.querySelectorAll('#buttons button'),
     bill=0,
     percent=0,
     peopleNumber=0,
-    buttonsList = [];
+    num =0;
 
 //reset buttons colors
 function bgReset(){
@@ -28,12 +28,11 @@ function app(){
 
     for(let i=0 ; i<inputs.length;i++){
         for(let i=0 ; i<buttons.length;i++){
-            buttonsList.push(buttons[i].getAttribute('percent'));
             buttons[i].addEventListener('click',function(){
-                bgReset();
-                percent = this.getAttribute('percent');
-                this.classList.add('select');
-                inputs[1].value ="";
+            bgReset();
+            percent = this.getAttribute('percent');
+            this.classList.add('select');
+            inputs[1].value ="";
             },false);
         }
 
@@ -53,6 +52,8 @@ function app(){
         if(inputs[2].value ==0){
             error.classList.add('error');
             error.nextElementSibling.classList.add('error-input');
+            tipDom.textContent = num.toFixed(2);
+            totalDom.textContent=num.toFixed(2);
             return;
         }
         else if(i==2){
@@ -72,7 +73,6 @@ function app(){
 window.onload = ()=>setInterval(app,100);
 
 resetBtn.addEventListener('click',function(){
-    let num =0;
     bgReset();
     inputs.forEach(element=>element.value="");
     tipDom.textContent = num.toFixed(2);
